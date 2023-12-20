@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: labels
+  namespace: roboshop
+  labels: 
+    env: DEV
+    kubernetes: true
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
