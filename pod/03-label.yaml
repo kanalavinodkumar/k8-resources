@@ -6,6 +6,8 @@ metadata:
   labels: 
     env: DEV
     containers: labels
+  annotations:
+    domain: vinodhub.online
 spec:
   containers:
     - name: nginx
