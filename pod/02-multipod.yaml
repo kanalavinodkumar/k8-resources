@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: multipod
+  namespace: roboshop
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+    - name: almalinux
+      image: almalinux:latest
+      command: ["sleep","300"]
