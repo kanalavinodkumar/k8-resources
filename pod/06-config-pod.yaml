@@ -7,13 +7,16 @@ spec:
     - name: config-pod
       image: nginx:latest
       env:
-        - name: Domain
-          valueFrom: 
-            configMapKeyRef:
-              name: config-map-test
-              key: Domain
-        - name: Tech-Lead
-          valueFrom: 
-            configMapKeyRef:
-              name: config-map-test
-              key: Tech-Lead
+      - configMapRef:
+          name: onfig-map-test
+      # env:
+      #   - name: Domain
+      #     valueFrom: 
+      #       configMapKeyRef:
+      #         name: config-map-test
+      #         key: Domain
+      #   - name: Tech-Lead
+      #     valueFrom: 
+      #       configMapKeyRef:
+      #         name: config-map-test
+      #         key: Tech-Lead
