@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: env-pod
+spec:
+  containers:
+    - name: env-pod
+      image: nginx:latest
+      env:
+        - name: Environment
+          value: DEV
+        - name: Application
+          value: Minikube
+        - name: Domain
+          value: vinodhub.online
+          
