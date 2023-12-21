@@ -6,7 +6,7 @@ spec:
   containers:
     - name: config-pod
       image: nginx:latest
-      env:
+      envFrom:
       - configMapRef:
           name: config-map-test
       # env:
