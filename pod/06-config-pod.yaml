@@ -8,7 +8,7 @@ spec:
       image: nginx:latest
       env:
       - configMapRef:
-          name: onfig-map-test
+          name: config-map-test
       # env:
       #   - name: Domain
       #     valueFrom: 
