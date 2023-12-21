@@ -10,10 +10,10 @@ spec:
         - name: Domain
           valueFrom: 
             configMapKeyRef:
-              - name: config-map-test
-                key: Domain
+              name: config-map-test
+              key: Domain
         - name: Tech-Lead
           valueFrom: 
             configMapKeyRef:
-              - name: config-map-test
-                key: Tech-Lead
+              name: config-map-test
+              key: Tech-Lead
