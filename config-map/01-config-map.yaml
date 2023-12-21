@@ -1,7 +1,7 @@
 kind: Configmap
 apiVersion: v1
 metadata:
-  name: config-map
+  name: config-map-test
 data:
   Domain: vinodhub.online
   Env: DEV
