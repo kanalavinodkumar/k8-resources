@@ -1,0 +1,18 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: nginx-service
+  labels:
+    name: nginx-service
+    env: DEV
+spec:
+  selector:
+    # pod -labels
+    application: Minikube
+  ports:
+  - name: http-port
+    protocol: TCP
+    # service-port
+    port: 80
+    # pod-port
+    targetPort: 80
