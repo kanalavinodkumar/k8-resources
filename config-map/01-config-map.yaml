@@ -1,0 +1,9 @@
+kind: Configmap
+apiVersion: v1
+metadata:
+  name: config-map
+data:
+  Domain: vinodhub.online
+  Env: DEV
+  Tech-Lead: Vinod-Kumar.Kanala
+  Application: Minikube
