@@ -2,10 +2,10 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: labels
-  namespace: roboshop
   labels: 
     env: DEV
     containers: labels
+    application: Minikube
   annotations:
     domain: vinodhub.online
 spec:

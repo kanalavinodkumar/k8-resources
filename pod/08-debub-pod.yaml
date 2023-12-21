@@ -1,0 +1,9 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: debug-pod
+spec:
+  containers:
+  - name: debug-pod
+    image: almalinux:latest
+    command: ["sleep", "20000"]
