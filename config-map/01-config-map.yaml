@@ -4,6 +4,6 @@ metadata:
   name: config-map-test
 data:
   Domain: vinodhub.online
-  Env: DEV
+  Env: Prod
   Tech-Lead: Vinod-Kumar.Kanala
-  Application: Minikube
+  Application: Roboshop
